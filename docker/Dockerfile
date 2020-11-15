@@ -15,5 +15,5 @@ RUN apt install -y \
 	libopencv-dev \
 	python3-opencv
 # install python library
-RUN pip3 install keras pillow adafruit-circuitpython-amg88xx
+RUN pip3 install keras pillow adafruit-circuitpython-amg88xx Jetson.GPIO matplotlib
 
