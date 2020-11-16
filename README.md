@@ -1,14 +1,15 @@
 # DEMO
-[![mask camera demo](https://img.youtube.com/vi/-wq80_ZY_kQ/0.jpg)](https://www.youtube.com/watch?v=-wq80_ZY_kQ)
+[![mask camera demo](https://img.youtube.com/vi/-TeoG2FZcuA/0.jpg)](https://www.youtube.com/watch?v=-TeoG2FZcuA)
 
 ## Youtube Link
-https://youtu.be/-wq80_ZY_kQ
+https://youtu.be/-TeoG2FZcuA
 
 # Features
 The mask_camera project uses the NVIDIA Jetson Development Kit series and WebCam to determine whether a mask can be worn. In addition, by connecting an IR array sensor device called AMG8833 as an option, the surface temperature of the human body can be measured at the same time.
-![Nobody](https://user-images.githubusercontent.com/26875192/99191269-116c4380-27af-11eb-8a3a-64c328fe7965.png)
-![Masked](https://user-images.githubusercontent.com/26875192/99191484-504ec900-27b0-11eb-8a1a-94f66b0eba52.png)
-![Unmasked](https://user-images.githubusercontent.com/26875192/99190624-dc5df200-27aa-11eb-86e6-3f98e8ac83fd.png)
+![nobody](https://user-images.githubusercontent.com/26875192/99282398-f8c76080-2876-11eb-9500-b9f23ebd761f.png)
+![unmasked](https://user-images.githubusercontent.com/26875192/99282440-054bb900-2877-11eb-912a-304fda48a805.png)
+![masked](https://user-images.githubusercontent.com/26875192/99282483-15639880-2877-11eb-8456-5c604e7ff530.png)
+
 The operating environment can be operated on the docker container with TensorFlow2 and Keras installed, and the learning model can be replaced with the one created independently on the TeachableMachine site.
 
 # Story
@@ -34,8 +35,7 @@ AMG8833(GND) ⇔ GPIO6(Ground)
 AMG8833(SDA) ⇔ GPIO3(SDA)
 AMG8833(SCL) ⇔ GPIO5(SCL)
 ```
-![pins](https://user-images.githubusercontent.com/26875192/99191849-e126a400-27b2-11eb-8c2f-ff16fa5eae26.png)
-
+![pins](https://user-images.githubusercontent.com/26875192/99282293-d7ff0b00-2876-11eb-84a2-0c57f7675e35.png)
 
 ## veirfy sensor connction
 how to verify i2c device on docker container
@@ -54,7 +54,7 @@ use i2cdetect command then response as below should be fine.
 ```
 ## Pin to WebCam
 Fix AMG8833 so that the field of view is about the same as WebCam.
-![camera](https://user-images.githubusercontent.com/26875192/99191984-99ece300-27b3-11eb-8e35-a246970b934e.png)
+![camera](https://user-images.githubusercontent.com/26875192/99282216-c158b400-2876-11eb-91c1-aa28599c0770.png)
 
 
 # Installation
