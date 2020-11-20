@@ -5,11 +5,11 @@
 https://youtu.be/-TeoG2FZcuA
 
 # Features
-The mask_camera project uses the NVIDIA Jetson Development Kit series and WebCam to determine whether a mask can be worn. In addition, by connecting an IR array sensor device called AMG8833 as an option, the surface temperature of the human body can be measured at the same time.
-![nobody](https://user-images.githubusercontent.com/26875192/99282398-f8c76080-2876-11eb-9500-b9f23ebd761f.png)
-![unmasked](https://user-images.githubusercontent.com/26875192/99282440-054bb900-2877-11eb-912a-304fda48a805.png)
-![masked](https://user-images.githubusercontent.com/26875192/99282483-15639880-2877-11eb-8456-5c604e7ff530.png)
-
+The mask_camera project uses the NVIDIA Jetson Development Kit series and WebCam to determine whether a mask can be worn. In addition, by connecting an IR array sensor device called AMG8833 as an option, the surface temperature of the human body can be measured at the same time.  
+![nobody](https://user-images.githubusercontent.com/26875192/99282398-f8c76080-2876-11eb-9500-b9f23ebd761f.png)  
+![unmasked](https://user-images.githubusercontent.com/26875192/99282440-054bb900-2877-11eb-912a-304fda48a805.png)  
+![masked](https://user-images.githubusercontent.com/26875192/99282483-15639880-2877-11eb-8456-5c604e7ff530.png)  
+  
 The operating environment can be operated on the docker container with TensorFlow2 and Keras installed, and the learning model can be replaced with the one created independently on the TeachableMachine site.
 
 # Story
@@ -18,9 +18,9 @@ Since COVID-19, the importance of wearing masks and measuring temperature has in
 # Requirement
 - NVIDIA Jetson device (veirfied on Jetson Nano 2GB)
 
-- Logcool 270 (USB Camera) 
+- Logcool 270 (USB Camera)   
 https://www.amazon.com/Logitech-C270-720pixels-Black-webcam/dp/B01BGBJ8Y0/ref=sr_1_3?dchild=1&keywords=C270&qid=1605453031&sr=8-3
-- Optional: AMG8833 (IR array sensor)
+- Optional: AMG8833 (IR array sensor)  
 https://www.sparkfun.com/products/14607
 
 # setup hardware
@@ -53,7 +53,7 @@ use i2cdetect command then response as below should be fine.
 70: -- -- -- -- -- -- -- --
 ```
 ## Pin to WebCam
-Fix AMG8833 so that the field of view is about the same as WebCam.
+Fix AMG8833 so that the field of view is about the same as WebCam.  
 ![camera](https://user-images.githubusercontent.com/26875192/99282216-c158b400-2876-11eb-91c1-aa28599c0770.png)
 
 
