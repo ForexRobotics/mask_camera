@@ -23,11 +23,11 @@ https://www.amazon.com/Logitech-C270-720pixels-Black-webcam/dp/B01BGBJ8Y0/ref=sr
 - Optional: AMG8833 (IR array sensor)  
 https://www.sparkfun.com/products/14607
 
-# setup hardware
+# Setup hardware
 AMG8833 is an optional sensor device for this project.
 When you connect AMG8833 to Jetson, you will see the  tempreture in the video frame.
 
-## connection AMG8833 - Jetson
+## Connection AMG8833 - Jetson
 The connection between AMG8833 and Jetson is as follows.
 ```
 AMG8833(3.3V) ⇔ GPIO1(3.3V)
@@ -37,7 +37,7 @@ AMG8833(SCL) ⇔ GPIO5(SCL)
 ```
 ![pins](https://user-images.githubusercontent.com/26875192/99282293-d7ff0b00-2876-11eb-84a2-0c57f7675e35.png)
 
-## veirfy sensor connction
+## Veirfy sensor connction
 how to verify i2c device on docker container
 use i2cdetect command then response as below should be fine.
 ```
@@ -58,7 +58,7 @@ Fix AMG8833 so that the field of view is about the same as WebCam.
 
 
 # Installation
-## clone gituhub and build docker container
+## Clone gituhub and build docker container
 ```
 $ git clone https://github.com/ForexRobotics/mask_camera.git
 
@@ -66,7 +66,7 @@ $ cd docker
 
 $ sudo docker build -t fr/l4t-ml:1.0 .
 ```
-## run docker container and program
+## Run docker container and program
 ```
 $ cd docker
 
@@ -77,7 +77,7 @@ $ sudo docker run -it --rm --net=host --runtime nvidia --privileged --device /de
 # python3 mask_camera.py
 ```
 
-## exit program
+## Exit program
 enter [q] key on video frame window or ctrl + [c] key on docker console then exit program.
 
 
