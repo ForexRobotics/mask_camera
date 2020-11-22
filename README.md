@@ -91,4 +91,4 @@ enter [q] key on video frame window or ctrl + [c] key on docker console then exi
 
 # Author
 Kazuyuki TAKAHASHI Forex Robotics CO., Ltd.
-<takahashi@forexrobotics.jp>
+<ktakahashi@forexrobotics.jp>
