@@ -62,7 +62,7 @@ Fix AMG8833 so that the field of view is about the same as WebCam.
 ```
 $ git clone https://github.com/ForexRobotics/mask_camera.git
 
-$ cd docker
+$ cd mask_camera/docker
 
 $ sudo docker build -t fr/l4t-ml:1.0 .
 ```
