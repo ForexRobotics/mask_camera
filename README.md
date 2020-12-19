@@ -89,6 +89,10 @@ enter [q] key on video frame window or ctrl + [c] key on docker console then exi
 - [Q] Poped up Low memory resource alert. 
 - [A] Please close another window and reduce other memory usage especially Jetson Nano 2GB is low main memory resource.
 
+- [Q] Can not open window from docker container.
+- [A] $ xhost +
+      Before docker run command.
+
 # Author
 Kazuyuki TAKAHASHI Forex Robotics CO., Ltd.
 <ktakahashi@forexrobotics.jp>
