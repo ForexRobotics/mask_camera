@@ -70,6 +70,8 @@ $ sudo docker build -t fr/l4t-ml:1.0 .
 ```
 $ cd docker
 
+$ xhost local:
+
 $ sudo docker run -it --rm --net=host --runtime nvidia --privileged --device /dev/video0 --device /dev/i2c-1 -e DISPLAY=$DISPLAY -v ~/mask_camera/src/:/root/src -v /tmp/.X11-unix/:/tmp/.X11-unix fr/l4t-ml:1.0
 
 # cd /root/src
@@ -78,7 +80,11 @@ $ sudo docker run -it --rm --net=host --runtime nvidia --privileged --device /de
 ```
 
 ## Exit program
-enter [q] key on video frame window or ctrl + [c] key on docker console then exit program.
+enter [q] key on video frame window or ctrl + [c] key then exit program.
+
+\# exit
+
+$ xhost -local:
 
 
 # Issues & FAQ
@@ -89,9 +95,11 @@ enter [q] key on video frame window or ctrl + [c] key on docker console then exi
 - [Q] Poped up Low memory resource alert. 
 - [A] Please close another window and reduce other memory usage especially Jetson Nano 2GB is low main memory resource.
 
-- [Q] Can not open window from docker container.
-- [A] $ xhost +
-      Before docker run command.
+- [Q] Show warning about "cannot open display: :0" from docker container.
+- [A] You may need to set access privilege of X window port. Please do below command before running docker container.
+      $ xhost local:
+      When you finish to use docker container, close access privilege like a below:
+      $xhost -local:
 
 # Author
 Kazuyuki TAKAHASHI Forex Robotics CO., Ltd.
