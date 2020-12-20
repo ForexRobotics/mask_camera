@@ -16,7 +16,7 @@ The operating environment can be operated on the docker container with TensorFlo
 Since COVID-19, the importance of wearing masks and measuring temperature has increased worldwide. However, the current situation is that dedicated camera devices are expensive and do not reach the people who need them. The purpose of this project is to contribute to the "democratization of AI" by providing open source solutions using inexpensive and high-speed AI edge devices such as NVIDIA Jetson Nano.
 
 # Requirement
-- NVIDIA Jetson device (veirfied on Jetson Nano 2GB)
+- NVIDIA Jetson device (veirfied on Jetson Nano 2GB Development Kit and Jetson Xavier NX Development Kit)
 
 - Logcool 270 (USB Camera)   
 https://www.amazon.com/Logitech-C270-720pixels-Black-webcam/dp/B01BGBJ8Y0/ref=sr_1_3?dchild=1&keywords=C270&qid=1605453031&sr=8-3
@@ -81,11 +81,11 @@ $ sudo docker run -it --rm --net=host --runtime nvidia --privileged --device /de
 
 ## Exit program
 enter [q] key on video frame window or ctrl + [c] key then exit program.
-
-\# exit
+```
+# exit
 
 $ xhost -local:
-
+```
 
 # Issues & FAQ
 ## Issues
@@ -97,9 +97,13 @@ $ xhost -local:
 
 - [Q] Show warning about "cannot open display: :0" from docker container.
 - [A] You may need to set access privilege of X window port. Please do below command before running docker container.
+```
       $ xhost local:
+```
       When you finish to use docker container, close access privilege like a below:
-      $xhost -local:
+```
+      $ xhost -local:
+```
 
 # Author
 Kazuyuki TAKAHASHI Forex Robotics CO., Ltd.
