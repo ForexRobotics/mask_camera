@@ -67,6 +67,7 @@ $ cd mask_camera/docker
 $ sudo docker build -t fr/l4t-ml:1.0 .
 ```
 ## Run docker container and program
+About "-v ~/mask_camera/src/" part, please replace local git cloned path.
 ```
 $ cd docker
 
