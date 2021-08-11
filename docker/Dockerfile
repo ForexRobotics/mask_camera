@@ -1,6 +1,8 @@
 # Docker file required NVIDIA l4t tensorflow2.3 keras opencv
 # base image
-FROM nvcr.io/nvidia/l4t-tensorflow:r32.4.4-tf2.3-py3
+#FROM nvcr.io/nvidia/l4t-tensorflow:r32.4.4-tf2.3-py3
+FROM nvcr.io/nvidia/l4t-tensorflow:r32.6.1-tf2.5-py3
+
 # maintainer
 MAINTAINER Kaz TAKAHASHI <ktakahashi@forexrobotics.jp>
 # update modules
